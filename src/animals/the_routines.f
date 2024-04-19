@@ -4,21 +4,29 @@
         implicit none
 
         type(fur)        :: fur_type
+        type(paws)       :: how_many
         character(len=*) :: dog_kind
 
         fur_type%color = "black"
         print *, "the kind of dog is a", dog_kind
         print *, "this dog has", fur_type%color, "fur"
 
+        how_many%number_of_paws = 4
+
       end subroutine dogs
 
-      subroutine cats(cat_kind)
+      subroutine cats(cat_kind, claws, petting)
 
         implicit none
 
         character(len=*) :: cat_kind
+        real             :: claws
+        logical          :: petting
 
         print *, "this kind of cat is", cat_kind
+
+        claws = 5.0
+        petting = .true.
 
       end subroutine cats
 
