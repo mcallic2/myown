@@ -3,9 +3,12 @@
         use characteristics
         implicit none
 
+        type(fur)        :: fur_type
         character(len=*) :: dog_kind
 
+        fur_type%color = "black"
         print *, "the kind of dog is", dog_kind
+        print *, "this dog has", fur_type%color, "fur"
 
       end subroutine dogs
 
