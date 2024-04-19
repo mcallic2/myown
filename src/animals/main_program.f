@@ -4,7 +4,7 @@
 
         implicit none
 
-        character(len=*) :: this_dog
+        character(len=14) :: this_dog
 
         this_dog = "german shepard"
         print *, "this is the main program"
