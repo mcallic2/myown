@@ -6,7 +6,7 @@ program im_testing_cats
   logical          :: test_petting
 
   test_cat_kind = "tabby"
-  test_claws    = 3.0
-  test_petting  = .false.
+  test_claws    = 4.0
+  test_petting  = .true.
 
 end program im_testing_cats
