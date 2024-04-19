@@ -13,8 +13,8 @@
         end type paws
 
         type land_or_water
-          character(len=*) :: land
-          character(len=*) :: water
+          character(len=8) :: land
+          character(len=8) :: water
         end type land_or_water
 
       end module characteristics
