@@ -12,5 +12,5 @@ add_executable(my_animals.x main_program.f ${my_srcs})
 
 install(TARGETS my_animals.x DESTINATION ${CMAKE_SOURCE_DIR}/exec)
 
-add_test(NAME test_cats COMMAND $<TARGET_FILE:test_cats>)
+add_test(NAME test_cats.x COMMAND $<TARGET_FILE:test_cats.x>)
 add_executable(test_cats.x test_animals/test_cats.F90)
