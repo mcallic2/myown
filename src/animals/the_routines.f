@@ -9,7 +9,7 @@
       end subroutine dogs
 
       subroutine cats(cat_kind)
-      
+
         implicit none
 
         character(len=*) :: cat_kind
