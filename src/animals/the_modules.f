@@ -1,7 +1,7 @@
       module characteristics
         
         type fur
-          character(len=*) :: color
+          character(len=8) :: color
         end type fur
 
         type teeth
