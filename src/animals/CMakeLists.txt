@@ -1,6 +1,6 @@
 # i think this does something to set the build directory path up
 # i'm not positive though
-set(CMAKE_Fortran_MODULE_DIRECTORY ${CMAKE_BINRARY_DIR})
+#set(CMAKE_Fortran_MODULE_DIRECTORY ${CMAKE_BINRARY_DIR})
 
 # i'll try leaving main program out of this for now
 set(my_srcs
