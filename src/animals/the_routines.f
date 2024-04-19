@@ -1,5 +1,6 @@
       subroutine dogs(dog_kind)
 
+        use characteristics
         implicit none
 
         character(len=*) :: dog_kind
