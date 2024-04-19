@@ -9,4 +9,6 @@ program im_testing_cats
   test_claws    = 4.0
   test_petting  = .true.
 
+  call cats(test_cat_kind, test_claws, test_petting)
+
 end program im_testing_cats
