@@ -5,4 +5,6 @@ project(
   DESCRIPTION "computers are confusing"
   LANGUAGES Fortran)
 
+enable_testing()
+
 add_subdirectory(src/animals/)
