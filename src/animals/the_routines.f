@@ -28,6 +28,9 @@
         claws = 5.0
         petting = .true.
 
+        print *, "the cat has", claws, "claws"
+        print *, "this cat likes to be pet", petting
+
       end subroutine cats
 
       subroutine birds(bird_kind)
