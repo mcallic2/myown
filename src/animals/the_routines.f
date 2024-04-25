@@ -49,12 +49,12 @@
 
         character(len=*)     :: snake_kind
         integer, intent(out) :: slimey_math_answer
-        integer, intent(in)  :: var1, var2
+        integer              :: var1, var2
 
         print *, "this kind of snake is", snake_kind
         var1 = 23
         var2 = 8
-        slimey_math = var1 + var2
+        slimey_math_answer = var1 + var2
 
       end subroutine snakes
 
