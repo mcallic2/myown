@@ -9,11 +9,13 @@ add_executable(my_animals.x main_program.f ${my_srcs})
 
 install(TARGETS my_animals.x DESTINATION ${CMAKE_SOURCE_DIR}/exec)
 
+# add library for tests
+add_library(animal_lib ${my_srcs})
 # creat test executables
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/animals/exec) # put any build executables in exec directory
 
 add_executable(cats.x   test_animals/test_cats.F90)
-target_link_libraries(cats.x SHARED my_animals.x)
+target_link_libraries(cats.x PRIVATE animal_lib)
 
 add_executable(snakes.x test_animals/test_snakes.F90)
 
