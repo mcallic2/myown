@@ -11,17 +11,18 @@ subroutine snake_test
   implicit none
 
   character(len=10) :: snake_kind
-  integer           :: routineanswer
+  integer           :: routineanswer, myanswer
   integer           :: testvar1, testvar2
   integer           :: works
 
   snake_kind = "copperhead"
   testvar1 = 30
   testvar2 = 20
+  myanswer testvar1 + testvar2
 
   call snakes(snake_kind, testvar1, testvar2, routineanswer)
 
-  works = passfail(31, routineanswer, "test snakes")
+  works = passfail(myanswer, routineanswer, "test snakes")
   print *, "works", works
   print *, "routine result", routineanswer
 
