@@ -10,19 +10,5 @@ program im_testing_cats
   test_petting  = .true.
 
   call cats(test_cat_kind, test_claws, test_petting)
-  
-
-  contains
-
-  function this_test() result(test_result)
-
-    integer :: test_result
-
-    test_result = 1   ! test fails early
-
-    call cats(test_cat_kind, test_claws, .false.)
-
-    return
-  end function this_test
 
 end program im_testing_cats
