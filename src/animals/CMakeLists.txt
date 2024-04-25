@@ -21,5 +21,5 @@ add_executable(snakes.x test_animals/test_snakes.F90)
 target_link_libraries(snakes.x PRIVATE animal_lib)
 
 
-add_test(test_cats ${animal_lib} ${CMAKE_BINARY_DIR}/src/animals/exec/cats.x)
-#add_test(test_snakes.x my_animals.x ${CMAKE_CURRENT_SOURCE_DIR}/src/animals/test_animals/test_snakes.F90)
+add_test(test_cats   ${animal_lib} ${CMAKE_BINARY_DIR}/src/animals/exec/cats.x)
+add_test(test_snakes ${animal_lib} ${CMAKE_BINARY_DIR}/src/animals/exec/snakes.x)
