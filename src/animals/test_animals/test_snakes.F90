@@ -2,6 +2,8 @@ program my_test_for_snakes
 
 implicit none
 
+call snake_test()
+
 contains
 
 subroutine snake_test
@@ -20,6 +22,8 @@ subroutine snake_test
   call snakes(snake_kind, testvar1, testvar2, routineanswer)
 
   works = passfail(31, routineanswer, "test snakes")
+  print *, "works", works
+  print *, "routine result", routineanswer
 
 
 end subroutine snake_test
