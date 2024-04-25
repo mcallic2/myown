@@ -37,7 +37,7 @@ function passfail(answer, routine_result, location) result(test_result)
 
   if (answer .ne. routine_result) then
     test_result = 1
-    write(*,*) "Expected", answer, "but got", routine_result
+    write(*,*) "Expected", routine_result, "but got", answer
     write(*,*) "Fails in", location
   else
     test_result = 0
