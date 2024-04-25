@@ -18,7 +18,7 @@ subroutine snake_test
   snake_kind = "copperhead"
   testvar1 = 30
   testvar2 = 20
-  myanswer testvar1 + testvar2
+  myanswer = testvar1 + testvar2
 
   call snakes(snake_kind, testvar1, testvar2, routineanswer)
 
