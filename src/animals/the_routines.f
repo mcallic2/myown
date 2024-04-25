@@ -43,13 +43,18 @@
 
       end subroutine birds
 
-      subroutine snakes(snake_kind)
+      subroutine snakes(snake_kind, var1, var2, slimey_math_answer)
 
         implicit none
 
-        character(len=*) :: snake_kind
+        character(len=*)     :: snake_kind
+        integer, intent(out) :: slimey_math_answer
+        integer, intent(in)  :: var1, var2
 
         print *, "this kind of snake is", snake_kind
+        var1 = 23
+        var2 = 8
+        slimey_math = var1 + var2
 
       end subroutine snakes
 
