@@ -23,4 +23,4 @@ target_link_libraries(snakes.x PRIVATE animal_lib)
 
 add_test(test_cats   ${animal_lib} ${CMAKE_BINARY_DIR}/src/animals/exec/cats.x)
 add_test(test_snakes ${animal_lib} ${CMAKE_BINARY_DIR}/src/animals/exec/snakes.x)
-set_property(TEST test_snakes PROPERTY test_result 1)
+set_property(TEST test_snakes PROPERTY test_result 0)
