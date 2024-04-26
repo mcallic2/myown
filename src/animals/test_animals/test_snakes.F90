@@ -37,13 +37,13 @@ function passfail(answer, routine_result, location) result(test_result)
 
   if (answer .ne. routine_result) then
     test_result = 1   ! test fails
-    stop 95
-
+    write(*,*) "Expected", routine_result, "but got", answer
+    write(*,*) "Fails in", location
+    call abort
   else
     test_result = 0   ! test passes
   end if
-95  format ("Expected", routine_result, "but got", answer)
-95  format ("Fails in", location)
+
 end function passfail
 
 end program my_test_for_snakes
