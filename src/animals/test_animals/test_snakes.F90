@@ -36,11 +36,12 @@ function passfail(answer, routine_result, location) result(test_result)
   integer                      :: test_result
 
   if (answer .ne. routine_result) then
-    test_result = 1
+    test_result = 1   ! test fails
     write(*,*) "Expected", routine_result, "but got", answer
     write(*,*) "Fails in", location
+    exit
   else
-    test_result = 0
+    test_result = 0   ! test passes
   end if
 
 end function passfail
