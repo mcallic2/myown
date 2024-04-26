@@ -37,9 +37,9 @@ function passfail(answer, routine_result, location) result(test_result)
 
   if (answer .ne. routine_result) then
     test_result = 1   ! test fails
-    stop 1
-1   format ("Expected", routine_result, "but got", answer)
-1   format ("Fails in", location)
+    stop 10
+10  format ("Expected", routine_result, "but got", answer)
+10  format ("Fails in", location)
   else
     test_result = 0   ! test passes
   end if
