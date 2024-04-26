@@ -39,7 +39,6 @@ function passfail(answer, routine_result, location) result(test_result)
     test_result = 1   ! test fails
     write(*,*) "Expected", routine_result, "but got", answer
     write(*,*) "Fails in", location
-    stop "THIS DOESNT WORK"
   else
     test_result = 0   ! test passes
   end if
