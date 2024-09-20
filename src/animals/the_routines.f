@@ -14,11 +14,16 @@
 
       subroutine cats(cat_kind)
 
+        use characteristics
         implicit none
 
         character(len=*) :: cat_kind
+        type(fur)        :: cat_fur
+
+        cat_fur%color = "orange"
 
         print *, "this kind of cat is", cat_kind
+        print *, "this cat has", cat_fur%color, "fur"
 
       end subroutine cats
 
